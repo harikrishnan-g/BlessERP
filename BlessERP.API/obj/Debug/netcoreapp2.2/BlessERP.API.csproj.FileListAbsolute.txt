@@ -26,3 +26,17 @@ D:\WorkPlace\Bless\WorkSpace\BlessERP\BlessERP.API\obj\Debug\netcoreapp2.2\Bless
 D:\WorkPlace\Bless\WorkSpace\BlessERP\BlessERP.API\obj\Debug\netcoreapp2.2\BlessERP.API.RazorTargetAssemblyInfo.cache
 D:\WorkPlace\Bless\WorkSpace\BlessERP\BlessERP.API\obj\Debug\netcoreapp2.2\BlessERP.API.dll
 D:\WorkPlace\Bless\WorkSpace\BlessERP\BlessERP.API\obj\Debug\netcoreapp2.2\BlessERP.API.pdb
+D:\WorkPlace\Bless\WorkSpace\Bless_GIT\BlessERP\BlessERP.API\bin\Debug\netcoreapp2.2\BlessERP.API.deps.json
+D:\WorkPlace\Bless\WorkSpace\Bless_GIT\BlessERP\BlessERP.API\bin\Debug\netcoreapp2.2\BlessERP.API.runtimeconfig.json
+D:\WorkPlace\Bless\WorkSpace\Bless_GIT\BlessERP\BlessERP.API\bin\Debug\netcoreapp2.2\BlessERP.API.runtimeconfig.dev.json
+D:\WorkPlace\Bless\WorkSpace\Bless_GIT\BlessERP\BlessERP.API\bin\Debug\netcoreapp2.2\BlessERP.API.dll
+D:\WorkPlace\Bless\WorkSpace\Bless_GIT\BlessERP\BlessERP.API\bin\Debug\netcoreapp2.2\BlessERP.API.pdb
+D:\WorkPlace\Bless\WorkSpace\Bless_GIT\BlessERP\BlessERP.API\obj\Debug\netcoreapp2.2\BlessERP.API.csprojAssemblyReference.cache
+D:\WorkPlace\Bless\WorkSpace\Bless_GIT\BlessERP\BlessERP.API\obj\Debug\netcoreapp2.2\BlessERP.API.csproj.CoreCompileInputs.cache
+D:\WorkPlace\Bless\WorkSpace\Bless_GIT\BlessERP\BlessERP.API\obj\Debug\netcoreapp2.2\BlessERP.API.RazorAssemblyInfo.cache
+D:\WorkPlace\Bless\WorkSpace\Bless_GIT\BlessERP\BlessERP.API\obj\Debug\netcoreapp2.2\BlessERP.API.RazorAssemblyInfo.cs
+D:\WorkPlace\Bless\WorkSpace\Bless_GIT\BlessERP\BlessERP.API\obj\Debug\netcoreapp2.2\BlessERP.API.AssemblyInfoInputs.cache
+D:\WorkPlace\Bless\WorkSpace\Bless_GIT\BlessERP\BlessERP.API\obj\Debug\netcoreapp2.2\BlessERP.API.AssemblyInfo.cs
+D:\WorkPlace\Bless\WorkSpace\Bless_GIT\BlessERP\BlessERP.API\obj\Debug\netcoreapp2.2\BlessERP.API.RazorTargetAssemblyInfo.cache
+D:\WorkPlace\Bless\WorkSpace\Bless_GIT\BlessERP\BlessERP.API\obj\Debug\netcoreapp2.2\BlessERP.API.dll
+D:\WorkPlace\Bless\WorkSpace\Bless_GIT\BlessERP\BlessERP.API\obj\Debug\netcoreapp2.2\BlessERP.API.pdb

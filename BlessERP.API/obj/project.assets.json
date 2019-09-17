@@ -12418,11 +12418,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\WorkPlace\\Bless\\WorkSpace\\BlessERP\\BlessERP.API\\BlessERP.API.csproj",
+      "projectUniqueName": "D:\\WorkPlace\\Bless\\WorkSpace\\Bless_GIT\\BlessERP\\BlessERP.API\\BlessERP.API.csproj",
       "projectName": "BlessERP.API",
-      "projectPath": "D:\\WorkPlace\\Bless\\WorkSpace\\BlessERP\\BlessERP.API\\BlessERP.API.csproj",
+      "projectPath": "D:\\WorkPlace\\Bless\\WorkSpace\\Bless_GIT\\BlessERP\\BlessERP.API\\BlessERP.API.csproj",
       "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-      "outputPath": "D:\\WorkPlace\\Bless\\WorkSpace\\BlessERP\\BlessERP.API\\obj\\",
+      "outputPath": "D:\\WorkPlace\\Bless\\WorkSpace\\Bless_GIT\\BlessERP\\BlessERP.API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
