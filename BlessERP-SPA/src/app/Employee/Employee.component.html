@@ -1,0 +1,73 @@
+<h1>Employees</h1>
+<div class="row">
+  <div class="col-8 mx-auto">
+    <button class="btn btn-primary" data-toggle="modal" data-target="#myModal">Create</button>
+    <table class="table">
+      <thead>
+        <th>Employee Code</th>
+        <th>Employee First Name</th>
+        <th>Employee Last Name</th>
+        <th>Employee Dept</th>
+      </thead>
+      <tbody>
+        <tr *ngFor="let employee of employees">
+          <td>{{employee.employeeCode}}</td>
+          <td>{{employee.firstName}}</td>
+          <td>{{employee.lastName}}</td>
+          <td>{{employee.department}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+<form>
+  <div class="modal" id="myModal" role="dialog">
+    <div class="modal-dialog">
+
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="modal-title">Employee</div>
+          <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+        </div>
+        <div class="modal-body">
+          <div class="form-group row">
+            <label for="txtEmployeeCode" class="col-sm-2 col-form-label">EmployeeCode</label>
+            <div class="col-sm-10">
+              <input type="text" id="txtEmployeeCode" style="width:150px" class="form-control"
+                placeholder="Employee Code" name="EmployeeCode" [(ngModel)]="newEmployee.employeeCode">
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <label for="txtFirstName" class="col-sm-2 col-form-label">FirstName</label>
+            <div class="col-sm-10">
+              <input type="text" id="txtFirstName" style="width:150px" class="form-control" placeholder="First Name"
+                name="FirstName" [(ngModel)]="newEmployee.firstName">
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <label for="txtLastName" class="col-sm-2 col-form-label">Last Name</label>
+            <div class="col-sm-10">
+              <input type="text" id="txtLastName" style="width:100px" class="form-control" placeholder="Last Name"
+                name="LastName" [(ngModel)]="newEmployee.lastName">
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <label for="txtDepartment" class="col-sm-2 col-form-label">Department</label>
+            <div class="col-sm-10">
+              <input type="text" id="txtDepartment" style="width:100px" class="form-control" placeholder="Department"
+                name="Department" [(ngModel)]="newEmployee.department">
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-warning" data-dismiss="modal">Cancel</button>
+          <button class="btn btn-success" data-dismiss="modal" (click)="onSaveClick()">Save</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</form>

@@ -1,0 +1,72 @@
+<h1>Tasks</h1>
+<div class="row">
+  <div class="col-8 mx-auto">
+    <button class="btn btn-primary" data-toggle="modal" data-target="#taskCreateModal">Create</button>
+    <table class="table">
+      <thead>
+        <th>Title</th>
+        <th>Assigned To</th>
+        <th>Created By</th>
+        <th>Details</th>
+      </thead>
+      <tbody>
+        <tr *ngFor="let Tasks of tasks">
+          <td>{{Tasks.title}}</td>
+          <td>{{Tasks.assignedTo}}</td>
+          <td>{{Tasks.createdBy}}</td>
+          <td>{{Tasks.description}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+<form>
+  <div class="modal" id="taskCreateModal" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="modal-title">New Task</div>
+          <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+        </div>
+        <div class="modal-body">
+          <div class="form-group row">
+            <label for="lblTaskTitle" class="col-sm-2 col-form-label">Title</label>
+            <div class="col-sm-10">
+              <input type="text" id="txtTaskTitle" style="width:150px" class="form-control" placeholder="Title"
+                name="Title" [(ngModel)]="newTask.title">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="lblTaskDescription" class="col-sm-2 col-form-label">Description</label>
+            <div class="col-sm-10">
+              <input type="text" id="txtTaskDescription" style="width:150px" class="form-control"
+                placeholder="Description" name="Title" [(ngModel)]="newTask.description">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="lblTaskAssigned" class="col-sm-2 col-form-label">Assigned</label>
+            <div class="col-sm-10">
+              <select id="ddlTaskAssignedTo" name='AssignedTo' [(ngModel)]="newTask.assignedTo">
+                <option value="1"> Harikrishnan</option>
+                <option value="2"> Biju</option>
+                <option value="3"> Ajith</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group row">
+              <label for="lblTaskCreated" class="col-sm-2 col-form-label">Created</label>
+              <div class="col-sm-10">
+                <select id="ddlTaskCreated" name='CreatedBy' [(ngModel)]="newTask.createdBy">
+                  <option value="1"> Harikrishnan</option>
+                </select>
+              </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-warning" data-dismiss="modal">Cancel</button>
+            <button class="btn btn-success" data-dismiss="modal" (click)="onSaveClick()">Save</button>
+          </div>
+      </div>
+    </div>
+  </div>
+</form>
