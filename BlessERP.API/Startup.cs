@@ -47,6 +47,7 @@ namespace BlessERP.API
             services.AddScoped<IAuthRepository,AuthRepository>();
             services.AddScoped<IEmployeeRepository,EmployeeRepository>();
             services.AddScoped<ITaskRepository,TaskRepository>();
+            services.AddScoped<INursingRepository,NursingRepository>();
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(Options => {
                 Options.TokenValidationParameters = new TokenValidationParameters
                 {

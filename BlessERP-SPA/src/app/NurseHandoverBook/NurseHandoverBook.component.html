@@ -1,0 +1,185 @@
+<h1>Nurse Handover Book</h1>
+<div class="row">
+  <div class="col-8 mx-auto">
+    <button class="btn btn-primary" data-toggle="modal" data-target="#nurseHandoverBookCreateModal">Create</button>
+    <table class="table">
+      <thead>
+        <th>Handover Date </th>
+        <th> Handover Nurse</th>
+        <th> CashInHand</th>
+        <th>CarpeDiemNotes</th>
+        <th>KeyHandOverNotes</th>
+        <th>SpecialDayNotes</th>
+      </thead>
+      <tbody>
+        <tr *ngFor="let nursingBookHandoverObj of nurseHandOverBookList">
+          <td>{{nursingBookHandoverObj.handoverDate}}</td>
+          <td>{{nursingBookHandoverObj.nurseEmployeecode}}</td>
+          <td>{{nursingBookHandoverObj.cashinHand}}</td>
+          <td>{{nursingBookHandoverObj.carpediumNotes}}</td>
+          <td>{{nursingBookHandoverObj.keyHandOverNotes}}</td>
+          <td>{{nursingBookHandoverObj.specialdayNotes}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+<form>
+  <div class="modal" id="nurseHandoverBookCreateModal" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="modal-title">Nurse Handover Book Entry</div>
+          <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+        </div>
+        <div class="modal-body">
+          <div class="form-group row">
+            <label for="lblTaskTitle" class="col-sm-2 col-form-label">Code</label>
+            <div class="col-sm-10">
+              <input type="text" id="txtCode" style="width:150px" class="form-control" placeholder="Code" name="Code"
+                [(ngModel)]="newNurseHandoverBook.nurseHandoverBookCode">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="lblTaskDescription" class="col-sm-2 col-form-label">Employee Code</label>
+            <div class="col-sm-10">
+              <input type="text" id="txtEmployeeCode" style="width:150px" class="form-control" placeholder="Employee Code"
+                name="Employee Code" [(ngModel)]="newNurseHandoverBook.nurseEmployeecode">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="lblTaskAssigned" class="col-sm-2 col-form-label">Date</label>
+            <div class="col-sm-10">
+              <input type="text" id="txtHandOverDate" style="width:150px" class="form-control" placeholder="Date"
+                name="Date" [(ngModel)]="newNurseHandoverBook.handoverDate">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="" class="col-sm-2 col-form-label">Cash in Hand</label>
+            <div class="col-sm-10">
+              <input type="text" id="txtCashInHand" style="width:150px" class="form-control" placeholder="Cash in Hand"
+                name="Cash in Hand" [(ngModel)]="newNurseHandoverBook.cashinHand">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="" class="col-sm-2 col-form-label">Notes</label>
+            <div class="col-sm-10">
+              <input type="text" id="txtNotes" style="width:150px" class="form-control" placeholder="Notes"
+                name="Notes" [(ngModel)]="newNurseHandoverBook.notes">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="" class="col-sm-2 col-form-label">CarpeDiem Notes</label>
+            <div class="col-sm-10">
+              <input type="text" id="txtNotes" style="width:150px" class="form-control" placeholder="CarpeDiem Notes"
+                name="CarpeDiem Notes" [(ngModel)]="newNurseHandoverBook.carpediumNotes">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="" class="col-sm-2 col-form-label">Special Day Notes</label>
+            <div class="col-sm-10">
+              <input type="text" id="txtNotes" style="width:150px" class="form-control" placeholder="Special Day Notes"
+                name="Special Day Notes" [(ngModel)]="newNurseHandoverBook.specialdayNotes">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="" class="col-sm-2 col-form-label">Staff Notes</label>
+            <div class="col-sm-10">
+              <input type="text" id="txtStaffNotes" style="width:150px" class="form-control" placeholder="Staff Notes"
+                name="Staff Notes" [(ngModel)]="newNurseHandoverBook.staffNotes">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="" class="col-sm-2 col-form-label">Technical Notes</label>
+            <div class="col-sm-10">
+              <input type="text" id="txtTechNotes" style="width:150px" class="form-control" placeholder="Technical Notes"
+                name="Technical Notes" [(ngModel)]="newNurseHandoverBook.technicalNotes">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="" class="col-sm-2 col-form-label">Maintenence Notes</label>
+            <div class="col-sm-10">
+              <input type="text" id="txtMaintananceNotes" style="width:150px" class="form-control" placeholder="Maintenence Notes"
+                name="Maintenence Notes" [(ngModel)]="newNurseHandoverBook.maintenenceNotes">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="" class="col-sm-2 col-form-label">Housekeeping Notes</label>
+            <div class="col-sm-10">
+              <input type="text" id="txtHouseKeepingNotes" style="width:150px" class="form-control" placeholder="Housekeeping Notes"
+                name="Housekeeping Notes" [(ngModel)]="newNurseHandoverBook.housekeepingNotes">
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <label for="" class="col-sm-2 col-form-label">Key HandOver Notes</label>
+            <div class="col-sm-10">
+              <input type="text" id="txtKeyHandoverNotes" style="width:150px" class="form-control" placeholder="Key HandOver Notes"
+                name="Key HandOver Notes" [(ngModel)]="newNurseHandoverBook.keyHandOverNotes">
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <label for="" class="col-sm-2 col-form-label">Short Stay Notes</label>
+            <div class="col-sm-10">
+              <input type="text" id="txtShotStayNotes" style="width:150px" class="form-control" placeholder="Short Stay Notes"
+                name="Short Stay Notes" [(ngModel)]="newNurseHandoverBook.shortstayNotes">
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <label for="" class="col-sm-2 col-form-label">Other Information</label>
+            <div class="col-sm-10">
+              <input type="text" id="txtOtherInfo" style="width:150px" class="form-control" placeholder="Other Information"
+                name="Other Information" [(ngModel)]="newNurseHandoverBook.otherInformation">
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <label for="" class="col-sm-2 col-form-label">Company Code</label>
+            <div class="col-sm-10">
+              <input type="text" id="txtCompCode" style="width:150px" class="form-control" placeholder="Company Code"
+                name="Company Code" [(ngModel)]="newNurseHandoverBook.companyCode">
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <label for="" class="col-sm-2 col-form-label">Branch Code</label>
+            <div class="col-sm-10">
+              <input type="text" id="txtBranchCode" style="width:150px" class="form-control" placeholder="Branch Code"
+                name="Branch Code" [(ngModel)]="newNurseHandoverBook.branchCode">
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <label for="" class="col-sm-2 col-form-label">Franchise Code</label>
+            <div class="col-sm-10">
+              <input type="text" id="txtFranchiseCode" style="width:150px" class="form-control" placeholder="Franchise Code"
+                name="Franchise Code" [(ngModel)]="newNurseHandoverBook.franchiseCode">
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <label for="" class="col-sm-2 col-form-label">Created User</label>
+            <div class="col-sm-10">
+              <input type="text" id="txtCreatedUser" style="width:150px" class="form-control" placeholder="Created User"
+                name="Created User" [(ngModel)]="newNurseHandoverBook.createdUser">
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <label for="" class="col-sm-2 col-form-label">Created Date Time</label>
+            <div class="col-sm-10">
+              <input type="text" id="txtCreatedDate" style="width:150px" class="form-control" placeholder="Created Date Time"
+                name="Created Date Time" [(ngModel)]="newNurseHandoverBook.createdDateTime">
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-warning" data-dismiss="modal">Cancel</button>
+          <button class="btn btn-success" data-dismiss="modal" (click)="onSaveClick()">Save</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>

@@ -19,6 +19,7 @@ import { EmployeeService } from './_services/employee.service';
 import { RouterModule } from '@angular/router';
 import { appRoutes } from './routes';
 import { TasksComponent } from './Tasks/Tasks.component';
+import { NurseHandoverBookComponent } from './NurseHandoverBook/NurseHandoverBook.component';
 
 @NgModule({
    declarations: [
@@ -29,7 +30,8 @@ import { TasksComponent } from './Tasks/Tasks.component';
       RegisterComponent,
       DepartmentComponent,
       EmployeeComponent,
-      TasksComponent
+      TasksComponent,
+      NurseHandoverBookComponent
    ],
    imports: [
       BrowserModule,

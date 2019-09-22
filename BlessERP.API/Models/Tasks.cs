@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace BlessERP.API.Models
+﻿namespace BlessERP.API.Models
 {
     public partial class Tasks
     {
@@ -11,7 +8,7 @@ namespace BlessERP.API.Models
         public int? AssignedTo { get; set; }
         public int? CreatedBy { get; set; }
 
-        public virtual Employees EmployeeAssigned { get; set; }
-        public virtual Employees EmployeeCreated { get; set; }
+        public virtual Employees AssignedToNavigation { get; set; }
+        public virtual Employees CreatedByNavigation { get; set; }
     }
 }
